@@ -1,0 +1,6 @@
+{
+  "name": "Sentinelle Réseau",
+  "description": "Plateforme d'audit de sécurité réseau : identification des appareils, analyse des ports et services, détection de vulnérabilités et génération de rapports de sécurisation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

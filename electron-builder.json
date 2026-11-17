@@ -1,0 +1,33 @@
+{
+  "appId": "com.ciphernetworkauditing.desktop",
+  "productName": "CipherNetworkAuditing",
+  "directories": {
+    "output": "dist-desktop/installers"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-desktop/ciphernetwork-backend.cjs",
+    "electron/main.cjs",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "CipherNetworkAuditing-${version}-win-${arch}.${ext}"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "category": "Network"
+  },
+  "mac": {
+    "target": ["dmg"]
+  }
+}
